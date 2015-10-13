@@ -28,6 +28,7 @@ namespace ActionsModule.ViewModels
 
             AvailableActions = new ObservableCollection<ImageAction>();
             AvailableActions.Add(new ColorCVTAction());
+            AvailableActions.Add(new FlipAction());
             AvailableActions.Add(new ThresholdAction());
             AvailableActions.Add(new AdaptiveThresholdAction());
             AvailableActions.Add(new BlurAction());
