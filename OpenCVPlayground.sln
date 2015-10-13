@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCVPlayground", "OpenCVPlayground\OpenCVPlayground.csproj", "{13715ADC-2ED2-4413-816B-F4FB413F8FB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{BF0EA225-C4CC-480A-8B69-C0901E8020CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageModule", "ImageModule\ImageModule.csproj", "{070F941E-0C8B-40CC-A29A-B8D40E147932}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuModule", "MenuModule\MenuModule.csproj", "{CF936527-7934-4771-9063-73077CA0C5BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionsModule", "ActionsModule\ActionsModule.csproj", "{596F59F7-B060-40F7-AB71-F73F7801A5FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13715ADC-2ED2-4413-816B-F4FB413F8FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13715ADC-2ED2-4413-816B-F4FB413F8FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13715ADC-2ED2-4413-816B-F4FB413F8FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13715ADC-2ED2-4413-816B-F4FB413F8FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{070F941E-0C8B-40CC-A29A-B8D40E147932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{070F941E-0C8B-40CC-A29A-B8D40E147932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{070F941E-0C8B-40CC-A29A-B8D40E147932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{070F941E-0C8B-40CC-A29A-B8D40E147932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF936527-7934-4771-9063-73077CA0C5BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF936527-7934-4771-9063-73077CA0C5BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF936527-7934-4771-9063-73077CA0C5BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF936527-7934-4771-9063-73077CA0C5BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{596F59F7-B060-40F7-AB71-F73F7801A5FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{596F59F7-B060-40F7-AB71-F73F7801A5FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{596F59F7-B060-40F7-AB71-F73F7801A5FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{596F59F7-B060-40F7-AB71-F73F7801A5FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{070F941E-0C8B-40CC-A29A-B8D40E147932} = {BF0EA225-C4CC-480A-8B69-C0901E8020CC}
+		{CF936527-7934-4771-9063-73077CA0C5BB} = {BF0EA225-C4CC-480A-8B69-C0901E8020CC}
+		{596F59F7-B060-40F7-AB71-F73F7801A5FF} = {BF0EA225-C4CC-480A-8B69-C0901E8020CC}
+	EndGlobalSection
+EndGlobal

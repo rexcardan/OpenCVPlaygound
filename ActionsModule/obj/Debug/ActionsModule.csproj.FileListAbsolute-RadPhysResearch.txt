@@ -1,0 +1,146 @@
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\dll\x86\msvcp120.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\dll\x86\msvcr120.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\dll\x86\opencv_world300.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\dll\x86\opencv_ffmpeg300.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\dll\x64\msvcp120.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\dll\x64\msvcr120.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\dll\x64\opencv_world300.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\dll\x64\opencv_ffmpeg300_64.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\ActionsModule.dll.config
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\ActionsModule.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\ActionsModule.pdb
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\OpenCvSharp.Blob.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\OpenCvSharp.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\OpenCvSharp.Extensions.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\OpenCvSharp.UserInterface.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Prism.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Prism.Unity.Wpf.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Prism.Wpf.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\OpenCvSharp.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\OpenCvSharp.Blob.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\OpenCvSharp.Extensions.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Prism.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Prism.Unity.Wpf.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Prism.Wpf.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\obj\Debug\Controls\DataTemplates.g.cs
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\obj\Debug\Views\ActionsView.g.cs
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\obj\Debug\ActionsModule_MarkupCompile.cache
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\obj\Debug\ActionsModule_MarkupCompile.lref
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\obj\Debug\Controls\DataTemplates.baml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\obj\Debug\Views\ActionsView.baml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\obj\Debug\ActionsModule.g.resources
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\obj\Debug\ActionsModule.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\obj\Debug\ActionsModule.pdb
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\ActionsModule\obj\Debug\ActionsModule.csprojResolveAssemblyReference.cache
+C:\Users\REX\Documents\Visual Studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\REX\Documents\Visual Studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\REX\Documents\Visual Studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\REX\Documents\Visual Studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\REX\Documents\Visual Studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\REX\Documents\Visual Studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\REX\Documents\Visual Studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\REX\Documents\Visual Studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\REX\Documents\Visual Studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\REX\Documents\Visual Studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\REX\Documents\Visual Studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\REX\Documents\Visual Studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\REX\Documents\Visual Studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\REX\Documents\Visual Studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\REX\Documents\Visual Studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\REX\Documents\Visual Studio 2015\Projects\OpenCVPlayground\ActionsModule\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\dll\x86\msvcp120.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\dll\x86\msvcr120.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\dll\x86\opencv_world300.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\dll\x86\opencv_ffmpeg300.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\dll\x64\msvcp120.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\dll\x64\msvcr120.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\dll\x64\opencv_world300.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\dll\x64\opencv_ffmpeg300_64.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\ActionsModule.dll.config
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\ActionsModule.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\ActionsModule.pdb
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\OpenCvSharp.Blob.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\OpenCvSharp.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\OpenCvSharp.Extensions.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\OpenCvSharp.UserInterface.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Prism.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Prism.Unity.Wpf.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Prism.Wpf.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\OpenCvSharp.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\OpenCvSharp.Blob.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\OpenCvSharp.Extensions.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Prism.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Prism.Unity.Wpf.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\Prism.Wpf.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\obj\Debug\ActionsModule.csprojResolveAssemblyReference.cache
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\obj\Debug\Controls\DataTemplates.g.cs
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\obj\Debug\Views\ActionsView.g.cs
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\obj\Debug\ActionsModule_MarkupCompile.cache
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\obj\Debug\ActionsModule_MarkupCompile.lref
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\obj\Debug\Controls\DataTemplates.baml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\obj\Debug\Views\ActionsView.baml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\obj\Debug\ActionsModule.g.resources
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\obj\Debug\ActionsModule.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\ActionsModule\obj\Debug\ActionsModule.pdb

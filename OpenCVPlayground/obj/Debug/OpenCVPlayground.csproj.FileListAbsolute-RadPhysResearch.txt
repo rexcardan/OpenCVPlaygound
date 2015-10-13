@@ -1,0 +1,132 @@
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x86\msvcp120.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x86\msvcr120.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x86\opencv_world300.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x86\opencv_ffmpeg300.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x64\msvcp120.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x64\msvcr120.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x64\opencv_world300.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x64\opencv_ffmpeg300_64.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCVPlayground.exe.config
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCVPlayground.exe
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCVPlayground.pdb
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\ActionsModule.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\ImageModule.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\MenuModule.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Ninject.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCvSharp.Blob.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCvSharp.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCvSharp.Extensions.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCvSharp.UserInterface.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Prism.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Prism.Unity.Wpf.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Prism.Wpf.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\ActionsModule.pdb
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\ImageModule.pdb
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\MenuModule.pdb
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Ninject.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCvSharp.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCvSharp.Blob.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCvSharp.Extensions.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Prism.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Prism.Unity.Wpf.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Prism.Wpf.xml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\obj\Debug\OpenCVPlayground.csprojResolveAssemblyReference.cache
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\obj\Debug\Views\MainView.g.cs
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\obj\Debug\App.g.cs
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\obj\Debug\OpenCVPlayground_MarkupCompile.cache
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\obj\Debug\OpenCVPlayground_MarkupCompile.lref
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\obj\Debug\Views\MainView.baml
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\obj\Debug\OpenCVPlayground.g.resources
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\obj\Debug\OpenCVPlayground.Properties.Resources.resources
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\obj\Debug\OpenCVPlayground.csproj.GenerateResource.Cache
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\obj\Debug\OpenCVPlayground.exe
+C:\Users\REX\documents\visual studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\obj\Debug\OpenCVPlayground.pdb
+C:\Users\REX\Documents\Visual Studio 2015\Projects\OpenCVPlayground\OpenCVPlayground\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCVPlayground.exe.config
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\obj\Debug\OpenCVPlayground.exe
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\obj\Debug\OpenCVPlayground.pdb
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x86\msvcp120.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x86\msvcr120.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x86\opencv_world300.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x86\opencv_ffmpeg300.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x64\msvcp120.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x64\msvcr120.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x64\opencv_world300.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\dll\x64\opencv_ffmpeg300_64.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCVPlayground.exe
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCVPlayground.pdb
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\ActionsModule.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\ImageModule.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\MenuModule.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Ninject.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCvSharp.Blob.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCvSharp.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCvSharp.Extensions.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCvSharp.UserInterface.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Prism.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Prism.Unity.Wpf.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Prism.Wpf.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\ActionsModule.pdb
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\ImageModule.pdb
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\MenuModule.pdb
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Ninject.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCvSharp.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCvSharp.Blob.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\OpenCvSharp.Extensions.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Prism.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Prism.Unity.Wpf.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\Prism.Wpf.xml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\obj\Debug\OpenCVPlayground.csprojResolveAssemblyReference.cache
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\obj\Debug\Views\MainView.g.cs
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\obj\Debug\App.g.cs
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\obj\Debug\OpenCVPlayground_MarkupCompile.cache
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\obj\Debug\OpenCVPlayground_MarkupCompile.lref
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\obj\Debug\Views\MainView.baml
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\obj\Debug\OpenCVPlayground.g.resources
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\obj\Debug\OpenCVPlayground.Properties.Resources.resources
+C:\Users\rcardan\OneDrive\Cardan.Code\Fun\OpenCVPlayground\OpenCVPlayground\obj\Debug\OpenCVPlayground.csproj.GenerateResource.Cache
