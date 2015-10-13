@@ -1,5 +1,5 @@
 ﻿using ActionsModule.Events;
-using ActionsModule.Structures;
+using ActionsModule.Actions;
 using OpenCvSharp;
 using Prism.Commands;
 using Prism.Events;

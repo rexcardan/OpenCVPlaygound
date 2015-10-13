@@ -6,24 +6,24 @@ using System.Text;
 using System.Threading.Tasks;
 using ActionsModule.Attributes;
 
-namespace ActionsModule.Structures
+namespace ActionsModule.Actions
 {
-    public class DilateAction : ImageAction
+    public class ErodeAction : ImageAction
     {
         private MorphShapes ms = MorphShapes.Ellipse;
         private int size = 3;
-        private int iterations=1;
+        private int iterations = 1;
         private BorderTypes borderTypes = BorderTypes.Constant;
 
-        public DilateAction()
+        public ErodeAction()
         {
-            this.Name = "Dilate";
+            this.Name = "Erode";
             this.Action = (m) =>
             {
                 try
                 {
                     var ms = Cv2.GetStructuringElement(MorphShape, new OpenCvSharp.Size(Size, Size));
-                    var cvt = m.Dilate(ms, null, Iterations, BorderType, null);
+                    var cvt = m.Erode(ms, null, Iterations, BorderType, null);
                     m.Dispose();
                     ms.Dispose();
                     HasError = false;
@@ -65,7 +65,7 @@ namespace ActionsModule.Structures
             }
         }
 
-        [SliderAttribute(1, 10)]
+        [SliderAttribute(1,10)]
         public int Iterations
         {
             get

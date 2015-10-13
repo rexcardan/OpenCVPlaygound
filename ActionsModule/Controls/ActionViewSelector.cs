@@ -1,4 +1,4 @@
-﻿using ActionsModule.Structures;
+﻿using ActionsModule.Actions;
 using System;
 using System.Collections.Generic;
 using System.Linq;

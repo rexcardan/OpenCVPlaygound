@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using OpenCvSharp;
 using ActionsModule.Attributes;
 
-namespace ActionsModule.Structures
+namespace ActionsModule.Actions
 {
     public class ColorCVTAction : ImageAction
     {

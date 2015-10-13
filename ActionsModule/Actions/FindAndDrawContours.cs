@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 
-namespace ActionsModule.Structures
+namespace ActionsModule.Actions
 {
     public class FindAndDrawContours : ImageAction
     {

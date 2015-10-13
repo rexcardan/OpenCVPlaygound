@@ -10,7 +10,7 @@ using System.Runtime.CompilerServices;
 using Prism.Events;
 using ActionsModule.Events;
 
-namespace ActionsModule.Structures
+namespace ActionsModule.Actions
 {
     public class ImageAction : BindableBase
     {

@@ -1,4 +1,4 @@
-﻿using ActionsModule.Structures;
+﻿using ActionsModule.Actions;
 using Prism.Events;
 using System;
 using System.Collections.Generic;

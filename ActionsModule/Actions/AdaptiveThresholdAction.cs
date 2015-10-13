@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ActionsModule.Structures
+namespace ActionsModule.Actions
 {
     public class AdaptiveThresholdAction : ImageAction
     {
