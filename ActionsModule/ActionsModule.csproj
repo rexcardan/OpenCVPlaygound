@@ -119,6 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActionsModuleModule.cs" />
+    <Compile Include="Actions\ContrastAction.cs" />
     <Compile Include="Actions\FlipAction.cs" />
     <Compile Include="Attributes\EnumAttribute.cs" />
     <Compile Include="Attributes\RGBColorAttribute.cs" />

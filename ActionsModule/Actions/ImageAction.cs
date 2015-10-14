@@ -54,7 +54,7 @@ namespace ActionsModule.Actions
         public bool HasError
         {
             get { return hasError; }
-            set { SetProperty(ref hasError, value); }
+            set { base.SetProperty(ref hasError, value); }
         }
     }
 }
