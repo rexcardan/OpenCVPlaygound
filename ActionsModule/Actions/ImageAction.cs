@@ -56,5 +56,14 @@ namespace ActionsModule.Actions
             get { return hasError; }
             set { base.SetProperty(ref hasError, value); }
         }
+
+        private string errorMessage;
+
+        public string ErrorMessage
+        {
+            get { return errorMessage; }
+            set { base.SetProperty(ref errorMessage, value); }
+        }
+
     }
 }

@@ -8,10 +8,14 @@
         xmlns:prism="http://prismlibrary.com/"      
         Title="Main" Height="1080" Width="1920" WindowState="Maximized" Icon="/OpenCVPlayground;component/opencv-logo.png">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1301*"/>
+            <ColumnDefinition Width="500"/>
+        </Grid.ColumnDefinitions>
         <DockPanel Background="black">
             <ContentControl prism:RegionManager.RegionName="MenuRegion" DockPanel.Dock="Top"/>
             <ContentControl prism:RegionManager.RegionName="ImageRegion" DockPanel.Dock="Left"/>
-            <ContentControl prism:RegionManager.RegionName="ActionsRegion" DockPanel.Dock="Right"/>
         </DockPanel>
+        <ContentControl prism:RegionManager.RegionName="ActionsRegion" Grid.Column="1"/>
     </Grid>
 </Window>

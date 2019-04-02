@@ -30,15 +30,6 @@
             </DockPanel>
             <ListView x:Name="current" HorizontalAlignment="Stretch" ItemsSource="{Binding CurrentActions}" MinHeight="300" DockPanel.Dock="Top" VerticalAlignment="Stretch"
                       HorizontalContentAlignment="Stretch" ItemTemplateSelector="{StaticResource ResourceKey=dtSelector}">
-                <!--<ListView.ItemTemplate>
-                    <DataTemplate>
-                        <DockPanel>
-                            <TextBlock Text="{Binding Name}" MinWidth="250" TextAlignment="Center" VerticalAlignment="Center"/>
-                            <Button Content="Edit" Command="{Binding ElementName=current, Path=DataContext.EditCommand}" CommandParameter="{Binding}" Padding="5"/>
-                            <Button Content="Delete" Command="{Binding ElementName=current, Path=DataContext.DeleteCommand}" CommandParameter="{Binding}" Padding="5"/>
-                        </DockPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>-->
             </ListView>
         </DockPanel>
     </Grid>

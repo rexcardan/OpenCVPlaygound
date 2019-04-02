@@ -121,6 +121,7 @@
     <Compile Include="ActionsModuleModule.cs" />
     <Compile Include="Actions\ContrastAction.cs" />
     <Compile Include="Actions\FlipAction.cs" />
+    <Compile Include="Actions\HoughCircles.cs" />
     <Compile Include="Attributes\EnumAttribute.cs" />
     <Compile Include="Attributes\RGBColorAttribute.cs" />
     <Compile Include="Controls\ActionViewSelector.cs" />
@@ -128,7 +129,7 @@
     <Compile Include="Controls\DataTemplates.xaml.cs">
       <DependentUpon>DataTemplates.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Converters\BoolToVisConverter.cs" />
+    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
     <Compile Include="Design\ActionsViewModel.cs" />
     <Compile Include="Events\ImageActionChangedEvent.cs" />
     <Compile Include="Events\OperateOnImageEvent.cs" />

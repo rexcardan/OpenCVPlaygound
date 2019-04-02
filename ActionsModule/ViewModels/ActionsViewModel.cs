@@ -37,6 +37,7 @@ namespace ActionsModule.ViewModels
             AvailableActions.Add(new ErodeAction());
             AvailableActions.Add(new DilateAction());
             AvailableActions.Add(new FindAndDrawContours());
+            AvailableActions.Add(new HoughCircles());
 
             CurrentActions = new ObservableCollection<ImageAction>();
 
