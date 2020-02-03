@@ -10,9 +10,7 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
         <Menu DockPanel.Dock="Top" Padding="5">
-            <MenuItem Header="_File">
-                <MenuItem Header="_Open Image" Command="{Binding OpenCommand}"/>
-            </MenuItem>
+            <MenuItem Header="_Open Image" Command="{Binding OpenCommand}"/>
         </Menu>
     </Grid>
 </UserControl>
