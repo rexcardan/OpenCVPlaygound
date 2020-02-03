@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:ImageModule.Views"
              mc:Ignorable="d" 
              xmlns:prism="http://prismlibrary.com/"
+             xmlns:controls="clr-namespace:ImageModule.Controls"
              prism:ViewModelLocator.AutoWireViewModel="True"
              d:DesignHeight="300" d:DesignWidth="300">
     <DockPanel LastChildFill="True">
@@ -14,13 +15,13 @@
             <Button Content="1:1" Command="{Binding SetUnityZoomCommand}" />
         </StackPanel>
 
-        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <controls:ScrollViewerEx HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
             <Image Source="{Binding Image}" Stretch="Uniform" HorizontalAlignment="Stretch">
                 <Image.LayoutTransform>
                     <ScaleTransform ScaleX="{Binding ZoomLevel}"
                                 ScaleY="{Binding ZoomLevel}" />
                 </Image.LayoutTransform>
             </Image>
-        </ScrollViewer>
+        </controls:ScrollViewerEx>
     </DockPanel>
 </UserControl>
