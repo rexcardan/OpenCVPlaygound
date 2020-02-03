@@ -29,7 +29,8 @@
                 <Button Content="Add" Padding="5" DockPanel.Dock="Top" Command="{Binding AddCommand}"/>
             </DockPanel>
             <ListView x:Name="current" HorizontalAlignment="Stretch" ItemsSource="{Binding CurrentActions}" MinHeight="300" DockPanel.Dock="Top" VerticalAlignment="Stretch"
-                      HorizontalContentAlignment="Stretch" ItemTemplateSelector="{StaticResource ResourceKey=dtSelector}">
+                      HorizontalContentAlignment="Stretch" ItemTemplateSelector="{StaticResource ResourceKey=dtSelector}"
+                      ScrollViewer.CanContentScroll="False">
             </ListView>
         </DockPanel>
     </Grid>
