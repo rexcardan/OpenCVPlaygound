@@ -8,7 +8,19 @@
              xmlns:prism="http://prismlibrary.com/"
              prism:ViewModelLocator.AutoWireViewModel="True"
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <Image Source="{Binding Image}" Stretch="Uniform" HorizontalAlignment="Stretch"/>
-    </Grid>
+    <DockPanel LastChildFill="True">
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+            <Slider Minimum="0.1" Maximum="10" Value="{Binding ZoomLevel, Mode=TwoWay}" Width="200" />
+            <Button Content="1:1" Command="{Binding SetUnityZoomCommand}" />
+        </StackPanel>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <Image Source="{Binding Image}" Stretch="Uniform" HorizontalAlignment="Stretch">
+                <Image.LayoutTransform>
+                    <ScaleTransform ScaleX="{Binding ZoomLevel}"
+                                ScaleY="{Binding ZoomLevel}" />
+                </Image.LayoutTransform>
+            </Image>
+        </ScrollViewer>
+    </DockPanel>
 </UserControl>

@@ -10,6 +10,8 @@ using System.Windows.Media.Imaging;
 using OpenCvSharp.Extensions;
 using MenuModule.Events;
 using Prism.Mvvm;
+using System.Windows.Input;
+using Prism.Commands;
 
 namespace ImageModule.ViewModels
 {
@@ -37,6 +39,8 @@ namespace ImageModule.ViewModels
                 OperatedImage = CurrentImage.Clone();
                 Image = OperatedImage.ToBitmapSource();
             });
+
+            SetUnityZoomCommand = new DelegateCommand(() => this.ZoomLevel = 1.0);
         }
 
         public Mat CurrentImage { get; set; }
@@ -48,5 +52,14 @@ namespace ImageModule.ViewModels
             get { return image; }
             set { SetProperty(ref image, value); }
         }
+
+        private double zoomLevel = 1.0;
+        public double ZoomLevel
+        {
+            get { return zoomLevel; }
+            set { SetProperty(ref zoomLevel, value); }
+        }
+
+        public ICommand SetUnityZoomCommand { get; }
     }
 }
