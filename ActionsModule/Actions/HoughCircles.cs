@@ -39,7 +39,7 @@ namespace ActionsModule.Actions
 
                     foreach (var circ in circles)
                     {
-                        Cv2.Circle(newImage, circ.Center, (int)circ.Radius, new Scalar(clr.B, clr.G, clr.R));
+                        newImage.Circle(new Point(circ.Center.X, circ.Center.Y), (int)circ.Radius, new Scalar(clr.B, clr.G, clr.R));
                     }
                     HasError = false;
                     return newImage;
