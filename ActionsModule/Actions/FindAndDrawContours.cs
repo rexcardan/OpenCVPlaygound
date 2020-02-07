@@ -38,13 +38,13 @@ namespace ActionsModule.Actions
                  return m;
              };
         }
-        [EnumAttribute(typeof(RetrievalModes))]
+        [Enum(typeof(RetrievalModes))]
         public RetrievalModes RetrievalMode { get { return rv; } set { SetProperty(ref rv, value); } }
 
-        [EnumAttribute(typeof(ContourApproximationModes))]
+        [Enum(typeof(ContourApproximationModes))]
         public ContourApproximationModes ContourApproximation { get { return cam; } set { SetProperty(ref cam, value); } }
 
-        [RGBColorAttribute]
+        [RGBColor]
         public Color? Color
         {
             get { return clr; }

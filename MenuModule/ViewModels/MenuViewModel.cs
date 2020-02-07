@@ -29,7 +29,7 @@ namespace MenuModule.ViewModels
                 //dlg.Filter = "Bitmaps (.bmp)|*.bmp | JPEG Files (*.jpeg) | *.jpeg | PNG Files(*.png) | *.png | JPG Files(*.jpg) | *.jpg | GIF Files(*.gif) | *.gif"; // Filter files by extension 
 
                 // Show open file dialog box 
-                Nullable<bool> result = dlg.ShowDialog();
+                bool? result = dlg.ShowDialog();
 
                 // Process open file dialog box results 
                 if (result == true)

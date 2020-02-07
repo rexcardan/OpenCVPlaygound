@@ -34,7 +34,7 @@ namespace ActionsModule.Actions
             };
         }
 
-        [SliderAttribute(0, 10,0.1)]
+        [Slider(0, 10,0.1)]
         public double Alpha
         {
             get
@@ -48,7 +48,7 @@ namespace ActionsModule.Actions
             }
         }
 
-        [SliderAttribute(-1000, 1000, 2)]
+        [Slider(-1000, 1000, 2)]
         public double Beta
         {
             get

@@ -66,7 +66,7 @@ namespace ActionsModule.Actions
             }
         }
 
-        [SliderAttribute(3, 25, 2)]
+        [Slider(3, 25, 2)]
         public int BlockSize
         {
             get { return blockSize; }
@@ -76,7 +76,7 @@ namespace ActionsModule.Actions
             }
         }
 
-        [SliderAttribute(-100, 255)]
+        [Slider(-100, 255)]
         public int Subtraction
         {
             get { return subtraction; }

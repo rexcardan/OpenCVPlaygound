@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ActionsModule.Attributes
 {
     [AttributeUsage(System.AttributeTargets.Property)]
-    public class SliderAttribute : System.Attribute
+    public class SliderAttribute : Attribute
     {
         public SliderAttribute(double minVal, double maxVal, double increment=1.0, bool isIntegerType = true)
         {

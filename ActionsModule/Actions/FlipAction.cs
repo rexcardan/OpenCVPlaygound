@@ -10,7 +10,7 @@ namespace ActionsModule.Actions
 {
     public class FlipAction : ImageAction
     {
-        private OpenCvSharp.FlipMode flipMode = OpenCvSharp.FlipMode.X;
+        private FlipMode flipMode = OpenCvSharp.FlipMode.X;
 
         public FlipAction()
         {
@@ -32,7 +32,7 @@ namespace ActionsModule.Actions
             };
         }
 
-        [EnumAttribute(typeof(FlipMode))]
+        [Enum(typeof(FlipMode))]
         public FlipMode FlipMode
         {
             get

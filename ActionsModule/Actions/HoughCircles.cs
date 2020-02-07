@@ -123,7 +123,7 @@ namespace ActionsModule.Actions
             }
         }
 
-        [RGBColorAttribute]
+        [RGBColor]
         public Color Color
         {
             get { return clr; }

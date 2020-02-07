@@ -11,7 +11,7 @@ namespace ActionsModule.Actions
     public class BlurAction : ImageAction
     {
         int size = 3;
-        [SliderAttribute(2,30)]
+        [Slider(2,30)]
         public int Size
         {
             get { return size; }
@@ -20,7 +20,7 @@ namespace ActionsModule.Actions
 
         BorderTypes bTypes = BorderTypes.Default;
 
-        [EnumAttribute(typeof(BorderTypes))]
+        [Enum(typeof(BorderTypes))]
         public BorderTypes BorderType
         {
             get { return bTypes; }
@@ -33,7 +33,7 @@ namespace ActionsModule.Actions
             {
                 try
                 {
-                    var blur =  m.Blur(new OpenCvSharp.Size(size, size),null, BorderType);
+                    var blur =  m.Blur(new Size(size, size),null, BorderType);
                     m.Dispose();
                     HasError = false;
                     return blur;

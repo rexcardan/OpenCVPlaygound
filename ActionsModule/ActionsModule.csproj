@@ -107,6 +107,7 @@
     <Compile Include="ActionsModuleModule.cs" />
     <Compile Include="Actions\ContrastAction.cs" />
     <Compile Include="Actions\FlipAction.cs" />
+    <Compile Include="Actions\HoughLines.cs" />
     <Compile Include="Actions\HoughCircles.cs" />
     <Compile Include="Attributes\EnumAttribute.cs" />
     <Compile Include="Attributes\RGBColorAttribute.cs" />

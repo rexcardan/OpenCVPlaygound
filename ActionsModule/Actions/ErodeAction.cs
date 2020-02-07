@@ -22,7 +22,7 @@ namespace ActionsModule.Actions
             {
                 try
                 {
-                    var ms = Cv2.GetStructuringElement(MorphShape, new OpenCvSharp.Size(Size, Size));
+                    var ms = Cv2.GetStructuringElement(MorphShape, new Size(Size, Size));
                     var cvt = m.Erode(ms, null, Iterations, BorderType, null);
                     m.Dispose();
                     ms.Dispose();
@@ -51,7 +51,7 @@ namespace ActionsModule.Actions
             }
         }
 
-        [SliderAttribute(3, 29, 2)]
+        [Slider(3, 29, 2)]
         public int Size
         {
             get
@@ -65,7 +65,7 @@ namespace ActionsModule.Actions
             }
         }
 
-        [SliderAttribute(1,10)]
+        [Slider(1,10)]
         public int Iterations
         {
             get

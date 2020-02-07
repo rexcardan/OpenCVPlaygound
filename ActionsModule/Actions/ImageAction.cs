@@ -46,7 +46,7 @@ namespace ActionsModule.Actions
 
         protected override bool SetProperty<T>(ref T storage, T value, [CallerMemberName] string propertyName = null)
         {
-            HasChanged = base.SetProperty<T>(ref storage, value, propertyName);
+            HasChanged = base.SetProperty(ref storage, value, propertyName);
             return HasChanged;
         }
 

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ActionsModule.Attributes
 {
     [AttributeUsage(System.AttributeTargets.Property)]
-    public class RGBColorAttribute: System.Attribute
+    public class RGBColorAttribute: Attribute
     {
         public RGBColorAttribute()
         {

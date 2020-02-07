@@ -10,8 +10,8 @@ namespace ActionsModule.Actions
 {
     public class CannyAction : ImageAction
     {
-        private double threshold1 = 0.0;
-        private double threshold2 = 0.0;
+        private double threshold1 = 80.0;
+        private double threshold2 = 160.0;
         private int apSize = 3;
 
         public CannyAction()
@@ -26,7 +26,7 @@ namespace ActionsModule.Actions
              };
         }
 
-        [SliderAttribute(0, 255)]
+        [Slider(0, 255)]
         public double Threshold1
         {
             get { return threshold1; }
@@ -36,7 +36,7 @@ namespace ActionsModule.Actions
             }
         }
 
-        [SliderAttribute(0, 255)]
+        [Slider(0, 255)]
         public double Threshold2
         {
             get { return threshold2; }
@@ -46,7 +46,7 @@ namespace ActionsModule.Actions
             }
         }
 
-        [SliderAttribute(3, 7,2)]
+        [Slider(3, 7,2)]
         public int AperatureSize
         {
             get { return apSize; }

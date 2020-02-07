@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ActionsModule.Attributes
 {
     [AttributeUsage(System.AttributeTargets.Property)]
-    public class EnumAttribute : System.Attribute
+    public class EnumAttribute : Attribute
     {
         public EnumAttribute(Type enumClass)
         {
