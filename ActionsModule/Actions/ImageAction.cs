@@ -12,7 +12,7 @@ using ActionsModule.Events;
 
 namespace ActionsModule.Actions
 {
-    public class ImageAction : BindableBase
+    public abstract class ImageAction : BindableBase
     {
         public Func<Mat, Mat> Action
         {

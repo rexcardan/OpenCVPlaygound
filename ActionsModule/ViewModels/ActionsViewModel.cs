@@ -26,19 +26,13 @@ namespace ActionsModule.ViewModels
                 _ea.GetEvent<OperateOnImageEvent>().Publish(this.CurrentActions);
             });
 
-            AvailableActions = new ObservableCollection<ImageAction>();
-            AvailableActions.Add(new ColorCVTAction());
-            AvailableActions.Add(new ContrastAction());
-            AvailableActions.Add(new FlipAction());
-            AvailableActions.Add(new ThresholdAction());
-            AvailableActions.Add(new AdaptiveThresholdAction());
-            AvailableActions.Add(new BlurAction());
-            AvailableActions.Add(new CannyAction());
-            AvailableActions.Add(new ErodeAction());
-            AvailableActions.Add(new DilateAction());
-            AvailableActions.Add(new FindAndDrawContours());
-            AvailableActions.Add(new HoughCircles());
+            var availableActions = typeof(ImageAction).Assembly
+                                                      .GetTypes()
+                                                      .Where(t => typeof(ImageAction).IsAssignableFrom(t) && t.IsClass && !t.IsAbstract)
+                                                      .Select(Activator.CreateInstance)
+                                                      .Cast<ImageAction>();
 
+            AvailableActions = new ObservableCollection<ImageAction>(availableActions);
             CurrentActions = new ObservableCollection<ImageAction>();
 
             AddCommand = new DelegateCommand(() =>
