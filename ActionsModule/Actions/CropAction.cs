@@ -20,7 +20,6 @@ namespace ActionsModule.Actions
                 var roi = new Rect((int)this.X, (int)this.Y, (int)this.Width, (int)this.Height);
                 var result = new Mat(input, roi);
                 input.Dispose();
-                this.HasError = false;
                 return result;
             };
         }
