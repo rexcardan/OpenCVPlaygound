@@ -21,18 +21,9 @@ namespace ActionsModule.Actions
             this.Name = "Adaptive Threshold";
             this.Action = (m) =>
             {
-                try
-                {
-                    var adp= m.AdaptiveThreshold(MaxVal, AdaptiveThresholdType, ThresholdType,BlockSize, Subtraction);
-                    m.Dispose();
-                    HasError = false;
-                    return adp;
-                }
-                catch (Exception)
-                {
-                    HasError = true;
-                }
-                return m;
+                var adp = m.AdaptiveThreshold(MaxVal, AdaptiveThresholdType, ThresholdType, BlockSize, Subtraction);
+                m.Dispose();
+                return adp;
             };
         }
 

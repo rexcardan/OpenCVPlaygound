@@ -27,7 +27,19 @@ namespace ImageModule.ViewModels
                 OperatedImage = CurrentImage.Clone();
                 foreach (var act in actions)
                 {
-                    OperatedImage = act.Action(OperatedImage);
+                    try
+                    {
+                        OperatedImage = act.Action(OperatedImage);
+
+                        act.ErrorMessage = string.Empty;
+                        act.HasError = false;
+                    }
+                    catch (Exception ex)
+                    {
+                        act.ErrorMessage = $"{ex.GetType().Name}: {ex.Message}";
+                        act.HasError = true;
+                    }
+
                     act.HasChanged = false;
                 }
                 Image = OperatedImage.ToBitmapSource();

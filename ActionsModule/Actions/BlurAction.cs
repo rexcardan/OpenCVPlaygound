@@ -31,18 +31,9 @@ namespace ActionsModule.Actions
             this.Name = "Blur";
             this.Action = (m) =>
             {
-                try
-                {
-                    var blur =  m.Blur(new Size(size, size),null, BorderType);
-                    m.Dispose();
-                    HasError = false;
-                    return blur;
-                }
-                catch (Exception)
-                {
-                    HasError = true;
-                }
-                return m;
+                var blur = m.Blur(new Size(size, size), null, BorderType);
+                m.Dispose();
+                return blur;
             };
         }
     }

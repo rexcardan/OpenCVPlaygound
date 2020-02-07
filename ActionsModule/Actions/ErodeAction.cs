@@ -20,20 +20,12 @@ namespace ActionsModule.Actions
             this.Name = "Erode";
             this.Action = (m) =>
             {
-                try
-                {
-                    var ms = Cv2.GetStructuringElement(MorphShape, new Size(Size, Size));
-                    var cvt = m.Erode(ms, null, Iterations, BorderType, null);
-                    m.Dispose();
-                    ms.Dispose();
-                    HasError = false;
-                    return cvt;
-                }
-                catch (Exception)
-                {
-                    HasError = true;
-                }
-                return m;
+                var ms = Cv2.GetStructuringElement(MorphShape, new Size(Size, Size));
+                var cvt = m.Erode(ms, null, Iterations, BorderType, null);
+                m.Dispose();
+                ms.Dispose();
+                HasError = false;
+                return cvt;
             };
         }
 
@@ -65,7 +57,7 @@ namespace ActionsModule.Actions
             }
         }
 
-        [Slider(1,10)]
+        [Slider(1, 10)]
         public int Iterations
         {
             get

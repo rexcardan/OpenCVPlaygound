@@ -21,7 +21,6 @@ namespace ActionsModule.Actions
              {
                  var canny = im.Canny(Threshold1, Threshold2, AperatureSize);
                  im.Dispose();
-                 HasError = false;
                  return canny;
              };
         }

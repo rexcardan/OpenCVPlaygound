@@ -17,27 +17,17 @@ namespace ActionsModule.Actions
             this.Name = "Hough Lines";
             this.Action = (input) =>
             {
-                try
+                if (input.Channels() != 1)
                 {
-                    if (input.Channels() != 1)
-                    {
-                        throw new Exception($"Image.Channels must be 1");
-                    }
-
-                    var image = this.Mode == HoughLinesMode.Standard
-                                        ? this.HoughLinesStandard(input)
-                                        : this.HoughLinesProbabilistic(input);
-
-                    HasError = false;
-                    return image;
-                }
-                catch (Exception e)
-                {
-                    HasError = true;
-                    this.ErrorMessage = e.Message;
+                    throw new Exception($"Image.Channels must be 1");
                 }
 
-                return input;
+                var image = this.Mode == HoughLinesMode.Standard
+                                    ? this.HoughLinesStandard(input)
+                                    : this.HoughLinesProbabilistic(input);
+
+                HasError = false;
+                return image;
             };
         }
 
@@ -115,7 +105,7 @@ namespace ActionsModule.Actions
 
             return image;
         }
-        
+
         private Mat HoughLinesProbabilistic(Mat input)
         {
             var c = new Scalar(this.Color.B, this.Color.G, this.Color.R);

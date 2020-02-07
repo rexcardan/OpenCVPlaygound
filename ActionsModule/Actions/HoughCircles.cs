@@ -27,29 +27,20 @@ namespace ActionsModule.Actions
             this.Name = "Hough Circles";
             this.Action = (m) =>
             {
-                try
+                if (m.Channels() != 1)
                 {
-                    if (m.Channels() != 1)
-                    {
-                        m = m.CvtColor(ColorConversionCodes.BGR2GRAY);
-                    }
-                    var circles = m.HoughCircles(method, dp, minDist, param1, param2, minRadius, maxRadius);
-                    var newImage = m.CvtColor(ColorConversionCodes.GRAY2BGR);
-                    m.Dispose();
+                    m = m.CvtColor(ColorConversionCodes.BGR2GRAY);
+                }
+                var circles = m.HoughCircles(method, dp, minDist, param1, param2, minRadius, maxRadius);
+                var newImage = m.CvtColor(ColorConversionCodes.GRAY2BGR);
+                m.Dispose();
 
-                    foreach (var circ in circles)
-                    {
-                        newImage.Circle(new Point(circ.Center.X, circ.Center.Y), (int)circ.Radius, new Scalar(clr.B, clr.G, clr.R));
-                    }
-                    HasError = false;
-                    return newImage;
-                }
-                catch (Exception e)
+                foreach (var circ in circles)
                 {
-                    HasError = true;
-                    this.ErrorMessage = e.Message;
+                    newImage.Circle(new Point(circ.Center.X, circ.Center.Y), (int)circ.Radius, new Scalar(clr.B, clr.G, clr.R));
                 }
-                return m;
+                HasError = false;
+                return newImage;
             };
         }
 

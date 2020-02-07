@@ -17,18 +17,10 @@ namespace ActionsModule.Actions
             this.Name = "Flip";
             this.Action = (m) =>
             {
-                try
-                {
-                    var flip = m.Flip(this.FlipMode);
-                    m.Dispose();
-                    HasError = false;
-                    return flip;
-                }
-                catch (Exception)
-                {
-                    HasError = true;
-                }
-                return m;
+                var flip = m.Flip(this.FlipMode);
+                m.Dispose();
+                HasError = false;
+                return flip;
             };
         }
 

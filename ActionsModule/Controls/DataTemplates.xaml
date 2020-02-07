@@ -14,7 +14,7 @@
         <DataTemplate x:Key="default">
             <StackPanel>
                 <Border Visibility="{Binding HasError, Converter={StaticResource HiddenIfFalse}}" BorderBrush="Red" BorderThickness="1" Margin="3">
-                    <TextBlock Text="{Binding ErrorMessage}"  TextWrapping="Wrap" Padding="5"/>
+                    <TextBlock Text="{Binding ErrorMessage}"  TextWrapping="Wrap" Padding="5" MaxWidth="300"/>
                 </Border>
                 <DockPanel>
                     <DockPanel.Style>

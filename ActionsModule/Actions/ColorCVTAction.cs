@@ -17,18 +17,10 @@ namespace ActionsModule.Actions
             this.Name = "Convert Color";
             this.Action = (m) =>
             {
-                try
-                {
-                    var cvt =  m.CvtColor(ColorConversion);
-                    m.Dispose();
-                    HasError = false;
-                    return cvt;
-                }
-                catch (Exception)
-                {
-                    HasError = true;
-                }
-                return m;
+                var cvt = m.CvtColor(ColorConversion);
+                m.Dispose();
+                HasError = false;
+                return cvt;
             };
         }
 

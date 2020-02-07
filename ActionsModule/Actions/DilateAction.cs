@@ -12,7 +12,7 @@ namespace ActionsModule.Actions
     {
         private MorphShapes ms = MorphShapes.Ellipse;
         private int size = 3;
-        private int iterations=1;
+        private int iterations = 1;
         private BorderTypes borderTypes = BorderTypes.Constant;
 
         public DilateAction()
@@ -20,20 +20,12 @@ namespace ActionsModule.Actions
             this.Name = "Dilate";
             this.Action = (m) =>
             {
-                try
-                {
-                    var ms = Cv2.GetStructuringElement(MorphShape, new Size(Size, Size));
-                    var cvt = m.Dilate(ms, null, Iterations, BorderType, null);
-                    m.Dispose();
-                    ms.Dispose();
-                    HasError = false;
-                    return cvt;
-                }
-                catch (Exception)
-                {
-                    HasError = true;
-                }
-                return m;
+                var ms = Cv2.GetStructuringElement(MorphShape, new Size(Size, Size));
+                var cvt = m.Dilate(ms, null, Iterations, BorderType, null);
+                m.Dispose();
+                ms.Dispose();
+                HasError = false;
+                return cvt;
             };
         }
 

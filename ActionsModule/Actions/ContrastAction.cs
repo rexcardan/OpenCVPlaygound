@@ -18,23 +18,15 @@ namespace ActionsModule.Actions
             this.Name = "Contrast";
             this.Action = (m) =>
             {
-                try
-                {
-                    var contrast = m.EmptyClone();
-                    m.ConvertTo(contrast, MatType.CV_8UC1, Alpha, Beta);
-                    m.Dispose();
-                    HasError = false;
-                    return contrast;
-                }
-                catch (Exception)
-                {
-                    HasError = true;
-                }
-                return m;
+                var contrast = m.EmptyClone();
+                m.ConvertTo(contrast, MatType.CV_8UC1, Alpha, Beta);
+                m.Dispose();
+                HasError = false;
+                return contrast;
             };
         }
 
-        [Slider(0, 10,0.1)]
+        [Slider(0, 10, 0.1)]
         public double Alpha
         {
             get

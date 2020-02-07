@@ -20,18 +20,8 @@ namespace ActionsModule.Actions
             this.Name = "Threshold";
             this.Action = (m) =>
             {
-                try
-                {
-                    var mat = m.Threshold(Threshold, MaxVal, ThresholdType);
-                    HasError = false;
-                    m.Dispose();
-                    return mat;
-                }
-                catch (OpenCVException)
-                {
-                    HasError = true;
-                }
-                return m;
+                var mat = m.Threshold(Threshold, MaxVal, ThresholdType);
+                return mat;
             };
         }
 

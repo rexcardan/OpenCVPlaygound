@@ -17,21 +17,11 @@ namespace ActionsModule.Actions
             this.Name = "Crop";
             this.Action = (input) =>
             {
-                try
-                {
-                    var roi = new Rect((int)this.X, (int)this.Y, (int)this.Width, (int)this.Height);
-                    var result = new Mat(input, roi);
-                    input.Dispose();
-                    this.HasError = false;
-                    return result;
-                }
-                catch (Exception e)
-                {
-                    HasError = true;
-                    this.ErrorMessage = e.Message;
-                }
-
-                return input;
+                var roi = new Rect((int)this.X, (int)this.Y, (int)this.Width, (int)this.Height);
+                var result = new Mat(input, roi);
+                input.Dispose();
+                this.HasError = false;
+                return result;
             };
         }
 
@@ -45,7 +35,7 @@ namespace ActionsModule.Actions
                 SetProperty(ref this.x, value);
             }
         }
-        
+
         private double y = 0;
         [Slider(0, 3000)]
         public double Y
@@ -56,10 +46,10 @@ namespace ActionsModule.Actions
                 SetProperty(ref this.y, value);
             }
         }
-        
+
         private double width = 100;
         [Slider(0, 3000)]
-        public double Width 
+        public double Width
         {
             get { return this.width; }
             set
@@ -67,10 +57,10 @@ namespace ActionsModule.Actions
                 SetProperty(ref this.width, value);
             }
         }
-        
+
         private double height = 100;
         [Slider(0, 3000)]
-        public double Height 
+        public double Height
         {
             get { return this.height; }
             set
