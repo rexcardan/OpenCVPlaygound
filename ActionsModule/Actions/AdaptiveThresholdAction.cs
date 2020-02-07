@@ -27,6 +27,7 @@ namespace ActionsModule.Actions
             };
         }
 
+        [ImportExport]
         [Slider(0, 255)]
         public double MaxVal
         {
@@ -37,6 +38,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Enum(typeof(AdaptiveThresholdTypes))]
         public AdaptiveThresholdTypes AdaptiveThresholdType
         {
@@ -47,6 +49,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Enum(typeof(ThresholdTypes))]
         public ThresholdTypes ThresholdType
         {
@@ -57,6 +60,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Slider(3, 25, 2)]
         public int BlockSize
         {
@@ -67,6 +71,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Slider(-100, 255)]
         public int Subtraction
         {

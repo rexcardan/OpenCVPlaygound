@@ -26,8 +26,16 @@
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
                 </ComboBox>
+
                 <Button Content="Add" Padding="5" DockPanel.Dock="Top" Command="{Binding AddCommand}"/>
+
             </DockPanel>
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                <Button Content="Load stack" Command="{Binding ImportCommand}" Width="100" Height="30" />
+                <Button Content="Save stack" Command="{Binding ExportCommand}" Width="100" Height="30" />
+            </StackPanel>
+
             <ListView x:Name="current" HorizontalAlignment="Stretch" ItemsSource="{Binding CurrentActions}" MinHeight="300" DockPanel.Dock="Top" VerticalAlignment="Stretch"
                       HorizontalContentAlignment="Stretch" ItemTemplateSelector="{StaticResource ResourceKey=dtSelector}"
                       ScrollViewer.CanContentScroll="False">

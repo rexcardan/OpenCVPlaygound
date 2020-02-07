@@ -28,6 +28,7 @@ namespace ActionsModule.Actions
         }
 
         private double degrees = 0;
+        [ImportExport]
         [Slider(-360, 360, 0.01, isIntegerType: false)]
         public double Degrees
         {
@@ -39,6 +40,7 @@ namespace ActionsModule.Actions
         }
         
         private double crop = 1.0;
+        [ImportExport]
         [Slider(0.1, 1.0, 0.01, isIntegerType: false)]
         public double Crop
         {

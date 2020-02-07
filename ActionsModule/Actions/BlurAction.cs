@@ -20,12 +20,14 @@ namespace ActionsModule.Actions
 
         BorderTypes bTypes = BorderTypes.Default;
 
+        [ImportExport]
         [Enum(typeof(BorderTypes))]
         public BorderTypes BorderType
         {
             get { return bTypes; }
             set { SetProperty(ref bTypes, value); }
         }
+
         public BlurAction()
         {
             this.Name = "Blur";

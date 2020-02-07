@@ -10,6 +10,13 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using System.Reflection;
+using Microsoft.Win32;
+using Newtonsoft.Json;
+using System.IO;
+using ActionsModule.Attributes;
+using Newtonsoft.Json.Linq;
 
 namespace ActionsModule.ViewModels
 {
@@ -40,12 +47,7 @@ namespace ActionsModule.ViewModels
                 if (SelectedAction != null)
                 {
                     var type = SelectedAction.GetType();
-                    var dup = (ImageAction)Activator.CreateInstance(type);
-                    dup.EventAggregator = _ea;
-                    dup.IsEditMode = true;
-                    dup.HasChanged = true;
-                    CurrentActions.Add(dup);
-                    _ea.GetEvent<OperateOnImageEvent>().Publish(this.CurrentActions);
+                    this.AddAction(type);
                 }
             });
 
@@ -79,6 +81,9 @@ namespace ActionsModule.ViewModels
             {
                 id.IsEditMode = !id.IsEditMode;
             });
+
+            ExportCommand = new DelegateCommand(this.OnExport);
+            ImportCommand = new DelegateCommand(this.OnImport);
         }
 
         public ObservableCollection<ImageAction> CurrentActions { get; set; }
@@ -91,5 +96,74 @@ namespace ActionsModule.ViewModels
         public DelegateCommand<ImageAction> ApplyCommand { get; private set; }
         public DelegateCommand<ImageAction> MoveUpCommand { get; private set; }
         public DelegateCommand<ImageAction> MoveDownCommand { get; private set; }
+
+        public ICommand ExportCommand { get; }
+        public ICommand ImportCommand { get; }
+        
+        private void OnExport()
+        {
+            var data = this.CurrentActions.Select(action => new { Type = action.GetType().FullName, Options = this.GetActionProperties(action) });
+            var sfd = new SaveFileDialog();
+            sfd.Filter = "Action stack|*.asj";
+            if (sfd.ShowDialog() == true)
+            {
+                var json = JsonConvert.SerializeObject(data, Formatting.Indented);
+                File.WriteAllText(sfd.FileName, json);
+            }
+        }
+
+        private void OnImport()
+        {
+            var ofd = new OpenFileDialog();
+            ofd.Filter = "Action stack|*.asj";
+            if (ofd.ShowDialog() == true)
+            {
+                var json = File.ReadAllText(ofd.FileName);
+                dynamic data = JArray.Parse(json);
+
+                this.CurrentActions.Clear();
+                foreach (var actionData in data)
+                {
+                    var actionType = Type.GetType((string)actionData.Type);
+                    this.AddAction(actionType, action => this.RestoreProperties(action, actionData.Options));
+                }
+            }
+        }
+
+        private void RestoreProperties(ImageAction action, JObject actionData)
+        {
+            foreach (var prop in this.GetImportExportProperties(action))
+            {
+                if (actionData.ContainsKey(prop.Name))
+                {
+                    prop.SetValue(action, Convert.ChangeType(actionData[prop.Name], prop.PropertyType));
+                }
+            }
+        }
+
+        private Dictionary<string, object> GetActionProperties(ImageAction action)
+        {
+            return this.GetImportExportProperties(action)
+                       .Select(p => new { p.Name, Value = p.GetValue(action) })
+                       .ToDictionary(i => i.Name, i => i.Value);
+        }
+
+        private IEnumerable<PropertyInfo> GetImportExportProperties(ImageAction action)
+        {
+            return action.GetType()
+                         .GetProperties(BindingFlags.Instance | BindingFlags.Public | BindingFlags.FlattenHierarchy)
+                         .Where(prop => prop.GetCustomAttribute<ImportExportAttribute>() != null);
+        }
+
+        private void AddAction(Type type, Action<ImageAction> initializer = null)
+        {
+            var action = (ImageAction)Activator.CreateInstance(type);
+            action.EventAggregator = _ea;
+            action.IsEditMode = true;
+            action.HasChanged = true;
+            initializer?.Invoke(action);
+            CurrentActions.Add(action);
+            _ea.GetEvent<OperateOnImageEvent>().Publish(this.CurrentActions);
+        }
     }
 }

@@ -24,6 +24,7 @@ namespace ActionsModule.Actions
             };
         }
 
+        [ImportExport]
         [Enum(typeof(FlipMode))]
         public FlipMode FlipMode
         {

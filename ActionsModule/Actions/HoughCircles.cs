@@ -44,6 +44,7 @@ namespace ActionsModule.Actions
             };
         }
 
+        [ImportExport]
         [Slider(0, 255)]
         public double DP
         {
@@ -54,6 +55,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Slider(0, 500)]
         public double MinDist
         {
@@ -64,6 +66,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Slider(0, 500)]
         public double Param1
         {
@@ -74,6 +77,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Slider(0, 500)]
         public double Param2
         {
@@ -84,6 +88,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Slider(0, 100)]
         public int MinRadius
         {
@@ -94,6 +99,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Slider(0, 500)]
         public int MaxRadius
         {
@@ -104,6 +110,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Enum(typeof(HoughMethods))]
         public HoughMethods HoughMethod
         {
@@ -114,6 +121,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [RGBColor]
         public Color Color
         {

@@ -26,6 +26,7 @@ namespace ActionsModule.Actions
             };
         }
 
+        [ImportExport]
         [Slider(0, 10, 0.1)]
         public double Alpha
         {
@@ -40,6 +41,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Slider(-1000, 1000, 2)]
         public double Beta
         {

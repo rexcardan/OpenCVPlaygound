@@ -25,6 +25,7 @@ namespace ActionsModule.Actions
              };
         }
 
+        [ImportExport]
         [Slider(0, 255)]
         public double Threshold1
         {
@@ -35,6 +36,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Slider(0, 255)]
         public double Threshold2
         {
@@ -45,6 +47,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Slider(3, 7,2)]
         public int AperatureSize
         {

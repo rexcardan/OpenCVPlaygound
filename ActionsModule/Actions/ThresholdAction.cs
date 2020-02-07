@@ -25,6 +25,7 @@ namespace ActionsModule.Actions
             };
         }
 
+        [ImportExport]
         [Slider(0, 255)]
         public double Threshold
         {
@@ -35,6 +36,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Slider(0, 255)]
         public double MaxVal
         {
@@ -45,6 +47,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Enum(typeof(ThresholdTypes))]
         public ThresholdTypes ThresholdType
         {

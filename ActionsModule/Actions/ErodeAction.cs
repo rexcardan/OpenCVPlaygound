@@ -29,6 +29,7 @@ namespace ActionsModule.Actions
             };
         }
 
+        [ImportExport]
         [Enum(typeof(MorphShapes))]
         public MorphShapes MorphShape
         {
@@ -43,6 +44,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Slider(3, 29, 2)]
         public int Size
         {
@@ -57,6 +59,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Slider(1, 10)]
         public int Iterations
         {
@@ -71,6 +74,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        [ImportExport]
         [Enum(typeof(BorderTypes))]
         public BorderTypes BorderType
         {

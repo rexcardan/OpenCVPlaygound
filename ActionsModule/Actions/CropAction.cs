@@ -25,6 +25,7 @@ namespace ActionsModule.Actions
         }
 
         private double x = 0;
+        [ImportExport]
         [Slider(0, 3000)]
         public double X
         {
@@ -36,6 +37,7 @@ namespace ActionsModule.Actions
         }
 
         private double y = 0;
+        [ImportExport]
         [Slider(0, 3000)]
         public double Y
         {
@@ -47,6 +49,7 @@ namespace ActionsModule.Actions
         }
 
         private double width = 100;
+        [ImportExport]
         [Slider(0, 3000)]
         public double Width
         {
@@ -58,6 +61,7 @@ namespace ActionsModule.Actions
         }
 
         private double height = 100;
+        [ImportExport]
         [Slider(0, 3000)]
         public double Height
         {

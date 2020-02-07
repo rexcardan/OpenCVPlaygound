@@ -24,6 +24,7 @@ namespace ActionsModule.Actions
             };
         }
 
+        [ImportExport]
         [Enum(typeof(ColorConversionCodes))]
         public ColorConversionCodes ColorConversion
         {

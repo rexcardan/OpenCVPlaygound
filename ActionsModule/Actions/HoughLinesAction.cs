@@ -43,6 +43,7 @@ namespace ActionsModule.Actions
         }
 
         private HoughLinesMode mode = HoughLinesMode.Standard;
+        [ImportExport]
         [Enum(typeof(HoughLinesMode))]
         public HoughLinesMode Mode
         {
@@ -54,6 +55,7 @@ namespace ActionsModule.Actions
         }
 
         private double rho = 1;
+        [ImportExport]
         [Slider(1, 100)]
         public double Rho
         {
@@ -65,6 +67,7 @@ namespace ActionsModule.Actions
         }
 
         private double theta = Math.PI / 180;
+        [ImportExport]
         [Slider(0, 1.0, 0.001)]
         public double Theta
         {
@@ -76,6 +79,7 @@ namespace ActionsModule.Actions
         }
 
         private double threshold = 100;
+        [ImportExport]
         [Slider(1, 1000)]
         public double Threshold
         {
@@ -87,6 +91,7 @@ namespace ActionsModule.Actions
         }
 
         private Color color = Colors.Red;
+        [ImportExport]
         [RGBColor]
         public Color Color
         {

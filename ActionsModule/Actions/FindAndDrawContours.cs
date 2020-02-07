@@ -38,12 +38,16 @@ namespace ActionsModule.Actions
                  return m;
              };
         }
+
+        [ImportExport]
         [Enum(typeof(RetrievalModes))]
         public RetrievalModes RetrievalMode { get { return rv; } set { SetProperty(ref rv, value); } }
 
+        [ImportExport]
         [Enum(typeof(ContourApproximationModes))]
         public ContourApproximationModes ContourApproximation { get { return cam; } set { SetProperty(ref cam, value); } }
 
+        [ImportExport]
         [RGBColor]
         public Color? Color
         {
