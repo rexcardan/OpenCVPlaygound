@@ -10,9 +10,9 @@ using System.Windows.Media;
 
 namespace ActionsModule.Actions
 {
-    public class HoughLines : ImageAction
+    public class HoughLinesAction : ImageAction
     {
-        public HoughLines()
+        public HoughLinesAction()
         {
             this.Name = "Hough Lines";
             this.Action = (input) =>
@@ -22,13 +22,24 @@ namespace ActionsModule.Actions
                     throw new Exception($"Image.Channels must be 1");
                 }
 
+                this.Status = "Processing...";
                 var image = this.Mode == HoughLinesMode.Standard
                                     ? this.HoughLinesStandard(input)
                                     : this.HoughLinesProbabilistic(input);
 
-                HasError = false;
                 return image;
             };
+        }
+
+        private string status = string.Empty;
+        [Label]
+        public string Status
+        {
+            get { return this.status; }
+            set
+            {
+                SetProperty(ref this.status, value);
+            }
         }
 
         private HoughLinesMode mode = HoughLinesMode.Standard;
@@ -103,6 +114,8 @@ namespace ActionsModule.Actions
                 }
             }
 
+            this.Status = $"{lines.Length} lines detected";
+
             return image;
         }
 
@@ -115,6 +128,8 @@ namespace ActionsModule.Actions
             {
                 image.Line(line.P1, line.P2, c);
             }
+
+            this.Status = $"{lines.Length} lines detected";
 
             return image;
         }

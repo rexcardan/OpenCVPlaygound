@@ -40,6 +40,15 @@ namespace ActionsModule.Controls
 
                         foreach (Attribute attr in attrs)
                         {
+                            if (attr is LabelAttribute)
+                            {
+                                var label = GenerateLabel(prop);
+                                sp.AppendChild(GenerateLabel(prop));
+                                label.SetBinding(TextBlock.TextProperty, new Binding(prop.Name));
+                                sp.AppendChild(label);
+                                sp.AppendChild(new FrameworkElementFactory(typeof(Separator)));
+                            }
+
                             if (attr is SliderAttribute)
                             {
                                 sp.AppendChild(GenerateLabel(prop));
@@ -92,21 +101,6 @@ namespace ActionsModule.Controls
                             }
                         }
                     }
-
-                    //var dp = new FrameworkElementFactory(typeof(DockPanel));
-                    //var applyBt = new FrameworkElementFactory(typeof(Button));
-                    //applyBt.SetBinding(Button.IsEnabledProperty, new Binding("HasChanged") { Mode = BindingMode.TwoWay });
-                    //applyBt.SetValue(DockPanel.DockProperty, Dock.Right);
-                    //applyBt.SetValue(Button.PaddingProperty, new Thickness(5));
-                    //applyBt.SetBinding(Button.CommandProperty, new Binding("ApplyCommand")
-                    //{
-                    //    ElementName = "current",
-                    //    Path = new PropertyPath("DataContext.ApplyCommand")
-                    //});
-                    //applyBt.SetBinding(Button.CommandParameterProperty, new Binding());
-                    //applyBt.SetValue(Button.ContentProperty, "Apply Changes");
-                    //dp.AppendChild(applyBt);
-                    //sp.AppendChild(dp);
 
                     mainPanel.AppendChild(sp);
                     return new DataTemplate() { VisualTree = mainPanel };

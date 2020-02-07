@@ -108,10 +108,11 @@
     <Compile Include="Actions\ContrastAction.cs" />
     <Compile Include="Actions\FlipAction.cs" />
     <Compile Include="Actions\CropAction.cs" />
-    <Compile Include="Actions\HoughLines.cs" />
+    <Compile Include="Actions\HoughLinesAction.cs" />
     <Compile Include="Actions\HoughCircles.cs" />
     <Compile Include="Attributes\EnumAttribute.cs" />
     <Compile Include="Attributes\RGBColorAttribute.cs" />
+    <Compile Include="Attributes\LabelAttribute.cs" />
     <Compile Include="Controls\ActionViewSelector.cs" />
     <Compile Include="Attributes\SliderAttribute.cs" />
     <Compile Include="Controls\DataTemplates.xaml.cs">
