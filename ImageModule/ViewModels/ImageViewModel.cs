@@ -12,6 +12,7 @@ using MenuModule.Events;
 using Prism.Mvvm;
 using System.Windows.Input;
 using Prism.Commands;
+using ImageModule.Controls;
 
 namespace ImageModule.ViewModels
 {
@@ -53,6 +54,7 @@ namespace ImageModule.ViewModels
             });
 
             SetUnityZoomCommand = new DelegateCommand(() => this.ZoomLevel = 1.0);
+            ZoomCommand = new DelegateCommand<ZoomCommandArgs>(args => this.ZoomLevel = Math.Max(0.1, Math.Min(this.ZoomLevel + args.Delta / 1200.0, 3.0)));
         }
 
         public Mat CurrentImage { get; set; }
@@ -73,5 +75,7 @@ namespace ImageModule.ViewModels
         }
 
         public ICommand SetUnityZoomCommand { get; }
+        
+        public ICommand ZoomCommand { get; }
     }
 }

@@ -11,15 +11,15 @@ namespace ImageModule.Controls
 {
     public class ScrollViewerEx : ScrollViewer
     {
-        public static DependencyProperty DragCommandProperty = DependencyProperty.Register("DragCommand", typeof(ICommand), typeof(ScrollViewerEx));
+        public static DependencyProperty ZoomCommandProperty = DependencyProperty.Register("ZoomCommand", typeof(ICommand), typeof(ScrollViewerEx));
 
         private bool isDragging = false;
         private Point lastMousePosition;
 
-        public ICommand DragCommand
+        public ICommand ZoomCommand
         {
-            get => (ICommand)this.GetValue(DragCommandProperty);
-            set => this.SetValue(DragCommandProperty, value);
+            get => (ICommand)this.GetValue(ZoomCommandProperty);
+            set => this.SetValue(ZoomCommandProperty, value);
         }
 
         protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
@@ -37,6 +37,12 @@ namespace ImageModule.Controls
             this.ReleaseMouseCapture();
         }
 
+        protected override void OnPreviewMouseWheel(MouseWheelEventArgs e)
+        {
+            base.OnPreviewMouseWheel(e);
+            this.ZoomCommand?.Execute(new ZoomCommandArgs(e.Delta));
+        }
+
         protected override void OnMouseMove(MouseEventArgs e)
         {
             base.OnMouseMove(e);
@@ -50,5 +56,15 @@ namespace ImageModule.Controls
             this.ScrollToHorizontalOffset(this.HorizontalOffset - delta.X);
             this.ScrollToVerticalOffset(this.VerticalOffset - delta.Y);
         }
+    }
+
+    public class ZoomCommandArgs
+    {
+        public ZoomCommandArgs(int delta)
+        {
+            this.Delta = delta;
+        }
+
+        public int Delta { get; }
     }
 }

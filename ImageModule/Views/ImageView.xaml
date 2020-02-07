@@ -11,12 +11,12 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <DockPanel LastChildFill="True">
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
-            <Slider Minimum="0.1" Maximum="10" Value="{Binding ZoomLevel, Mode=TwoWay}" Width="200" />
+            <Slider Minimum="0.1" Maximum="2" Value="{Binding ZoomLevel, Mode=TwoWay}" Width="200" AutoToolTipPrecision="2" AutoToolTipPlacement="TopLeft" />
             <Button Content="1:1" Command="{Binding SetUnityZoomCommand}" />
         </StackPanel>
 
-        <controls:ScrollViewerEx HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-            <Image Source="{Binding Image}" Stretch="Uniform" HorizontalAlignment="Stretch">
+        <controls:ScrollViewerEx HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" ZoomCommand="{Binding ZoomCommand}">
+            <Image Source="{Binding Image}" Stretch="None" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Image.LayoutTransform>
                     <ScaleTransform ScaleX="{Binding ZoomLevel}"
                                 ScaleY="{Binding ZoomLevel}" />
