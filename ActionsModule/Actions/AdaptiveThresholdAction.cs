@@ -28,7 +28,7 @@ namespace ActionsModule.Actions
                     HasError = false;
                     return adp;
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     HasError = true;
                 }

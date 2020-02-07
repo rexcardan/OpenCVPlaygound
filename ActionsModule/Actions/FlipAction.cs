@@ -24,7 +24,7 @@ namespace ActionsModule.Actions
                     HasError = false;
                     return flip;
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     HasError = true;
                 }

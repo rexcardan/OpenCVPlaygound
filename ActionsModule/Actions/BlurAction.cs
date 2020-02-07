@@ -38,7 +38,7 @@ namespace ActionsModule.Actions
                     HasError = false;
                     return blur;
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     HasError = true;
                 }

@@ -24,7 +24,7 @@ namespace ActionsModule.Actions
                     HasError = false;
                     return cvt;
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     HasError = true;
                 }

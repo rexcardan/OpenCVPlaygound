@@ -26,7 +26,7 @@ namespace ActionsModule.Actions
                     HasError = false;
                     return contrast;
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     HasError = true;
                 }

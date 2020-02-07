@@ -27,7 +27,7 @@ namespace ActionsModule.Actions
                     m.Dispose();
                     return mat;
                 }
-                catch(OpenCVException e)
+                catch (OpenCVException)
                 {
                     HasError = true;
                 }
