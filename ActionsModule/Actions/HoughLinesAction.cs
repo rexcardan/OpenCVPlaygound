@@ -1,4 +1,5 @@
 ﻿using ActionsModule.Attributes;
+using ActionsModule.DrawHelpers;
 using OpenCvSharp;
 using Prism.Mvvm;
 using System;
@@ -107,24 +108,11 @@ namespace ActionsModule.Actions
 
         private Mat HoughLinesStandard(Mat input)
         {
-            var c = new Scalar(this.Color.B, this.Color.G, this.Color.R);
+            var color = new Scalar(this.Color.B, this.Color.G, this.Color.R);
             var lines = input.HoughLines(this.Rho, this.Theta, (int)this.Threshold);
             var image = input.CvtColor(ColorConversionCodes.GRAY2BGR);
             foreach (var line in lines)
-            {
-                var xz = line.XPosOfLine(0);
-                var yz = line.YPosOfLine(0);
-
-                if (xz.HasValue && !yz.HasValue)
-                    image.Line(new Point(xz.Value, 0), new Point(xz.Value, image.Height), c);
-                else if (!xz.HasValue && yz.HasValue)
-                    image.Line(new Point(0, yz.Value), new Point(image.Width, yz.Value), c);
-                else
-                {
-                    var seg = line.ToSegmentPointX(0, image.Width);
-                    image.Line(seg.P1, seg.P2, c);
-                }
-            }
+                line.Draw(image, color);
 
             this.Status = $"{lines.Length} lines detected";
 
