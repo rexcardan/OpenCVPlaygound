@@ -78,7 +78,7 @@ namespace ActionsModule.Actions
             }
         }
 
-        private double threshold = 100;
+        private double threshold = 200;
         [ImportExport]
         [Slider(1, 1000)]
         public double Threshold
@@ -112,10 +112,17 @@ namespace ActionsModule.Actions
             var image = input.CvtColor(ColorConversionCodes.GRAY2BGR);
             foreach (var line in lines)
             {
-                if (line.Theta != 0)
+                var xz = line.XPosOfLine(0);
+                var yz = line.YPosOfLine(0);
+
+                if (xz.HasValue && !yz.HasValue)
+                    image.Line(new Point(xz.Value, 0), new Point(xz.Value, image.Height), c);
+                else if (!xz.HasValue && yz.HasValue)
+                    image.Line(new Point(0, yz.Value), new Point(image.Width, yz.Value), c);
+                else
                 {
-                    var l = line.ToSegmentPointX(0, image.Width);
-                    image.Line(l.P1, l.P2, c);
+                    var seg = line.ToSegmentPointX(0, image.Width);
+                    image.Line(seg.P1, seg.P2, c);
                 }
             }
 
