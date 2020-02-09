@@ -74,6 +74,7 @@
     <Compile Include="Controls\ScrollViewerEx.cs" />
     <Compile Include="ImageModuleModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\CachedImage.cs" />
     <Compile Include="ViewModels\ImageViewModel.cs" />
     <Compile Include="Views\ImageView.xaml.cs">
       <DependentUpon>ImageView.xaml</DependentUpon>

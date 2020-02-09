@@ -33,10 +33,6 @@ namespace ActionsModule.ViewModels
             {
                 _ea.GetEvent<OperateOnImageEvent>().Publish(this.CurrentActions);
             });
-            _ea.GetEvent<OpenImageEvent>().Subscribe((ia) =>
-            {
-                _ea.GetEvent<OperateOnImageEvent>().Publish(this.CurrentActions);
-            });
 
             var availableActions = typeof(ImageAction).Assembly
                                                       .GetTypes()

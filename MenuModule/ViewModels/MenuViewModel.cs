@@ -25,18 +25,13 @@ namespace MenuModule.ViewModels
             OpenCommand = new DelegateCommand(() =>
             {
                 Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
-                dlg.DefaultExt = ".png"; // Default file extension 
-                //dlg.Filter = "Bitmaps (.bmp)|*.bmp | JPEG Files (*.jpeg) | *.jpeg | PNG Files(*.png) | *.png | JPG Files(*.jpg) | *.jpg | GIF Files(*.gif) | *.gif"; // Filter files by extension 
+                dlg.Filter = "Images (.bmp;.jpg;.jpeg;.png;.gif)|*.bmp;*.jpg;*.jpeg;*.png;*.gif";
+                dlg.Multiselect = true;
 
-                // Show open file dialog box 
-                bool? result = dlg.ShowDialog();
-
-                // Process open file dialog box results 
-                if (result == true)
+                if (dlg.ShowDialog() == true
+                 && dlg.FileNames.Any())
                 {
-                    // Open document 
-                    string filename = dlg.FileName;
-                    _ea.GetEvent<OpenImageEvent>().Publish(filename);
+                    _ea.GetEvent<OpenImageEvent>().Publish(dlg.FileNames);
                 }
             });
         }

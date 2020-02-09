@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MenuModule.Events
 {
-    public class OpenImageEvent : PubSubEvent<string>
+    public class OpenImageEvent : PubSubEvent<string[]>
     {
     }
 }
