@@ -17,6 +17,7 @@ using Newtonsoft.Json;
 using System.IO;
 using ActionsModule.Attributes;
 using Newtonsoft.Json.Linq;
+using MenuModule.Events;
 
 namespace ActionsModule.ViewModels
 {
@@ -29,6 +30,10 @@ namespace ActionsModule.ViewModels
             _ea = ea;
 
             _ea.GetEvent<ImageActionChangedEvent>().Subscribe((ia) =>
+            {
+                _ea.GetEvent<OperateOnImageEvent>().Publish(this.CurrentActions);
+            });
+            _ea.GetEvent<OpenImageEvent>().Subscribe((ia) =>
             {
                 _ea.GetEvent<OperateOnImageEvent>().Publish(this.CurrentActions);
             });

@@ -25,6 +25,9 @@ namespace ImageModule.ViewModels
             _ea = ea;
             _ea.GetEvent<OperateOnImageEvent>().Subscribe((actions) =>
             {
+                if (CurrentImage == null)
+                    return;
+
                 OperatedImage = CurrentImage.Clone();
                 foreach (var act in actions)
                 {
