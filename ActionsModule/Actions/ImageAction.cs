@@ -43,6 +43,11 @@ namespace ActionsModule.Actions
         }
         public string Name { get; protected set; }
         public IEventAggregator EventAggregator { get; internal set; }
+        
+        protected void SetPropertyNoChange<T>(ref T storage, T value, [CallerMemberName] string propertyName = null)
+        {
+            base.SetProperty(ref storage, value, propertyName);
+        }
 
         protected override bool SetProperty<T>(ref T storage, T value, [CallerMemberName] string propertyName = null)
         {
