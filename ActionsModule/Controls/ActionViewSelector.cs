@@ -48,6 +48,16 @@ namespace ActionsModule.Controls
                                 sp.AppendChild(label);
                                 sp.AppendChild(new FrameworkElementFactory(typeof(Separator)));
                             }
+                            
+                            if (attr is CheckBoxAttribute)
+                            {
+                                var checkbox = new FrameworkElementFactory(typeof(CheckBox));
+                                checkbox.SetValue(CheckBox.ContentProperty, prop.Name);
+                                checkbox.SetValue(CheckBox.MarginProperty, new Thickness(5));
+                                checkbox.SetBinding(CheckBox.IsCheckedProperty, new Binding(prop.Name));
+                                sp.AppendChild(checkbox);
+                                sp.AppendChild(new FrameworkElementFactory(typeof(Separator)));
+                            }
 
                             if (attr is SliderAttribute)
                             {

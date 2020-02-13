@@ -108,7 +108,7 @@
     <Compile Include="ActionsModuleModule.cs" />
     <Compile Include="Actions\ContrastAction.cs" />
     <Compile Include="Actions\AutoRotateAction.cs" />
-    <Compile Include="Actions\FindRectangleAction.cs" />
+    <Compile Include="Actions\ExtractRectangleAction.cs" />
     <Compile Include="Actions\RotateAction.cs" />
     <Compile Include="Actions\FlipAction.cs" />
     <Compile Include="Actions\CropAction.cs" />
@@ -116,6 +116,7 @@
     <Compile Include="Actions\HoughCircles.cs" />
     <Compile Include="Attributes\EnumAttribute.cs" />
     <Compile Include="Attributes\ImportExportAttribute.cs" />
+    <Compile Include="Attributes\CheckBoxAttribute.cs" />
     <Compile Include="Attributes\RGBColorAttribute.cs" />
     <Compile Include="Attributes\LabelAttribute.cs" />
     <Compile Include="Controls\ActionViewSelector.cs" />
