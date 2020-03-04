@@ -10,6 +10,7 @@ using System.Windows.Media;
 
 namespace ActionsModule.Actions
 {
+    [Category("Transformations")]
     public class RotateAction : ImageAction
     {
         public RotateAction()

@@ -1,4 +1,5 @@
 ﻿using ActionsModule.Actions;
+using ActionsModule.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -12,15 +13,13 @@ namespace ActionsModule.Design
     {
         public ActionsViewModel()
         {
-            AvailableActions = new ObservableCollection<ImageAction>();
-            AvailableActions.Add(new ThresholdAction());
-            SeletedAction = AvailableActions.First();
+            Categories = new ObservableCollection<ActionCategory>();
 
             CurrentActions = new ObservableCollection<ImageAction>();
             CurrentActions.Add(new ThresholdAction());
         }
 
-        public ObservableCollection<ImageAction> AvailableActions { get; private set; }
+        public ObservableCollection<ActionCategory> Categories { get; set; }
         public ObservableCollection<ImageAction> CurrentActions { get; private set; }
 
         public ImageAction SeletedAction { get; set; }

@@ -8,6 +8,7 @@ using ActionsModule.Attributes;
 
 namespace ActionsModule.Actions
 {
+    [Category("Transformations")]
     public class FlipAction : ImageAction
     {
         private FlipMode flipMode = OpenCvSharp.FlipMode.X;

@@ -8,6 +8,7 @@ using ActionsModule.Attributes;
 
 namespace ActionsModule.Actions
 {
+    [Category("Preprocessing")]
     public class ErodeAction : ImageAction
     {
         private MorphShapes ms = MorphShapes.Ellipse;

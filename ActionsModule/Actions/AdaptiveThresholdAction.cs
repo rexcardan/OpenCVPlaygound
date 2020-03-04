@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace ActionsModule.Actions
 {
+    [Category("Preprocessing")]
     public class AdaptiveThresholdAction : ImageAction
     {
         private double maxVal = 255;

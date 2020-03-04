@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace ActionsModule.Actions
 {
+    [Category("Preprocessing")]
     public class CannyAction : ImageAction
     {
         private double threshold1 = 80.0;

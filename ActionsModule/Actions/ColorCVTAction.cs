@@ -8,6 +8,7 @@ using ActionsModule.Attributes;
 
 namespace ActionsModule.Actions
 {
+    [Category("Preprocessing")]
     public class ColorCVTAction : ImageAction
     {
         private ColorConversionCodes cc = ColorConversionCodes.BGR2GRAY;

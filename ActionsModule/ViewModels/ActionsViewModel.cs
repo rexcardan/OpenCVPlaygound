@@ -40,16 +40,18 @@ namespace ActionsModule.ViewModels
                                                       .Select(Activator.CreateInstance)
                                                       .Cast<ImageAction>();
 
-            AvailableActions = new ObservableCollection<ImageAction>(availableActions);
+            var groupedActions = from action in availableActions
+                                 let category = action.GetType().GetCustomAttribute<CategoryAttribute>()?.Category ?? "{uncategorized}"
+                                 group action by category into grouped
+                                 select new ActionCategory(grouped.Key, grouped);
+
+            Categories = new ObservableCollection<ActionCategory>(groupedActions);
             CurrentActions = new ObservableCollection<ImageAction>();
 
-            AddCommand = new DelegateCommand(() =>
+            AddCommand = new DelegateCommand<ImageAction>(action =>
             {
-                if (SelectedAction != null)
-                {
-                    var type = SelectedAction.GetType();
-                    this.AddAction(type);
-                }
+                var type = action.GetType();
+                this.AddAction(type);
             });
 
             DeleteCommand = new DelegateCommand<ImageAction>((id) =>
@@ -88,12 +90,11 @@ namespace ActionsModule.ViewModels
         }
 
         public ObservableCollection<ImageAction> CurrentActions { get; set; }
-        public ObservableCollection<ImageAction> AvailableActions { get; set; }
-        public ImageAction SelectedAction { get; set; }
+        public ObservableCollection<ActionCategory> Categories { get; set; }
 
         public DelegateCommand<ImageAction> DeleteCommand { get; set; }
         public DelegateCommand<ImageAction> EditCommand { get; set; }
-        public DelegateCommand AddCommand { get; set; }
+        public DelegateCommand<ImageAction> AddCommand { get; set; }
         public DelegateCommand<ImageAction> ApplyCommand { get; private set; }
         public DelegateCommand<ImageAction> MoveUpCommand { get; private set; }
         public DelegateCommand<ImageAction> MoveDownCommand { get; private set; }

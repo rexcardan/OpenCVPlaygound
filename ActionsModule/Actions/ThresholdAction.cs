@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace ActionsModule.Actions
 {
+    [Category("Preprocessing")]
     public class ThresholdAction : ImageAction
     {
         private double threshold = 0.0;

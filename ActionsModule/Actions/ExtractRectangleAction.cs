@@ -9,6 +9,7 @@ using System.Windows.Media;
 
 namespace ActionsModule.Actions
 {
+    [Category("HighLevel")]
     public class ExtractRectangleAction : ImageAction
     {
         public ExtractRectangleAction()

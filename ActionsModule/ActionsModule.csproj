@@ -114,11 +114,14 @@
     <Compile Include="Actions\CropAction.cs" />
     <Compile Include="Actions\HoughLinesAction.cs" />
     <Compile Include="Actions\HoughCircles.cs" />
+    <Compile Include="AttachedProperties\ContextMenuButton.cs" />
     <Compile Include="Attributes\EnumAttribute.cs" />
     <Compile Include="Attributes\ImportExportAttribute.cs" />
     <Compile Include="Attributes\CheckBoxAttribute.cs" />
     <Compile Include="Attributes\RGBColorAttribute.cs" />
     <Compile Include="Attributes\LabelAttribute.cs" />
+    <Compile Include="Attributes\CategoryAttribute.cs" />
+    <Compile Include="BindingProxy.cs" />
     <Compile Include="Controls\ActionViewSelector.cs" />
     <Compile Include="Attributes\SliderAttribute.cs" />
     <Compile Include="Controls\DataTemplates.xaml.cs">
@@ -141,6 +144,7 @@
     <Compile Include="Actions\FindAndDrawContours.cs" />
     <Compile Include="Actions\ImageAction.cs" />
     <Compile Include="Actions\ThresholdAction.cs" />
+    <Compile Include="ViewModels\ActionCategory.cs" />
     <Compile Include="ViewModels\ActionsViewModel.cs" />
     <Compile Include="Views\ActionsView.xaml.cs">
       <DependentUpon>ActionsView.xaml</DependentUpon>

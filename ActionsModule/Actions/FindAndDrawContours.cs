@@ -9,6 +9,7 @@ using System.Windows.Media;
 
 namespace ActionsModule.Actions
 {
+    [Category("Recognition")]
     public class FindAndDrawContours : ImageAction
     {
         private RetrievalModes rv = RetrievalModes.List;

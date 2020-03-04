@@ -12,6 +12,7 @@ using System.Windows.Media;
 
 namespace ActionsModule.Actions
 {
+    [Category("Transformations")]
     public class AutoRotateAction : ImageAction
     {
         public AutoRotateAction()

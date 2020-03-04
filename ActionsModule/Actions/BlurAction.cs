@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace ActionsModule.Actions
 {
+    [Category("Preprocessing")]
     public class BlurAction : ImageAction
     {
         int size = 3;

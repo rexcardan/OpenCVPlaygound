@@ -10,6 +10,7 @@ using System.Windows.Media;
 
 namespace ActionsModule.Actions
 {
+    [Category("Recognition")]
     public class HoughCircles : ImageAction
     {
         private double minDist = 5.0;

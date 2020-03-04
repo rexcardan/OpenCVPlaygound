@@ -11,6 +11,7 @@ using System.Windows.Media;
 
 namespace ActionsModule.Actions
 {
+    [Category("Recognition")]
     public class HoughLinesAction : ImageAction
     {
         public HoughLinesAction()
