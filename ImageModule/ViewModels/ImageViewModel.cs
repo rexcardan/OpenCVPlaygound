@@ -83,9 +83,14 @@ namespace ImageModule.ViewModels
 
         private void Compute()
         {
-            if (this.SelectedImage == null
-                || this.actions == null)
+            if (this.SelectedImage == null)
                 return;
+
+            if (this.actions == null)
+            {
+                Image = this.SelectedImage.GetCopy().ToBitmapSource();
+                return;
+            }
 
             OperatedImage = this.SelectedImage.GetCopy();
             foreach (var act in this.actions)
