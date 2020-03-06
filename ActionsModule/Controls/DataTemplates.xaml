@@ -36,6 +36,7 @@
                             </Style.Triggers>
                         </Style>
                     </DockPanel.Style>
+                    <CheckBox IsChecked="{Binding IsEnabled, Mode=TwoWay}" VerticalAlignment="Center" />
                     <TextBlock Text="{Binding Name}" MinWidth="250" TextAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Left" Foreground="White" Padding="5" FontWeight="DemiBold">
                     </TextBlock>
                     <Button Command="{Binding ElementName=current, Path=DataContext.DeleteCommand}" CommandParameter="{Binding}" Padding="5" DockPanel.Dock="Right">

@@ -97,7 +97,10 @@ namespace ImageModule.ViewModels
             {
                 try
                 {
-                    OperatedImage = act.Action(OperatedImage);
+                    if (act.IsEnabled)
+                    {
+                        OperatedImage = act.Action(OperatedImage);
+                    }
 
                     act.ErrorMessage = string.Empty;
                     act.HasError = false;

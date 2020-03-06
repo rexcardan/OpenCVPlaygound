@@ -41,6 +41,17 @@ namespace ActionsModule.Actions
                 base.SetProperty(ref isEditMode, value);
             }
         }
+
+        private bool isEnabled = true;
+        public bool IsEnabled
+        {
+            get { return isEnabled; }
+            set
+            {
+                this.SetProperty(ref isEnabled, value);
+            }
+        }
+        
         public string Name { get; protected set; }
         public IEventAggregator EventAggregator { get; internal set; }
         
