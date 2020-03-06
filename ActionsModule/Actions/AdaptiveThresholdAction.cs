@@ -62,7 +62,7 @@ namespace ActionsModule.Actions
         }
 
         [ImportExport]
-        [Slider(3, 25, 2)]
+        [Slider(3, 300, 2)]
         public int BlockSize
         {
             get { return blockSize; }

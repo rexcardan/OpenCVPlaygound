@@ -108,6 +108,7 @@
     <Compile Include="ActionsModuleModule.cs" />
     <Compile Include="Actions\ContrastAction.cs" />
     <Compile Include="Actions\AutoRotateAction.cs" />
+    <Compile Include="Actions\UnsharpMaskAction.cs" />
     <Compile Include="Actions\ExtractRectangleAction.cs" />
     <Compile Include="Actions\RotateAction.cs" />
     <Compile Include="Actions\FlipAction.cs" />
