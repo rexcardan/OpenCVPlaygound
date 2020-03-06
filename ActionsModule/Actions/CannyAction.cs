@@ -11,8 +11,6 @@ namespace ActionsModule.Actions
     [Category("Preprocessing")]
     public class CannyAction : ImageAction
     {
-        private double threshold1 = 80.0;
-        private double threshold2 = 160.0;
         private int apSize = 3;
 
         public CannyAction()
@@ -26,6 +24,7 @@ namespace ActionsModule.Actions
              };
         }
 
+        private double threshold1 = 80.0;
         [ImportExport]
         [Slider(0, 255)]
         public double Threshold1
@@ -37,6 +36,7 @@ namespace ActionsModule.Actions
             }
         }
 
+        private double threshold2 = 160.0;
         [ImportExport]
         [Slider(0, 255)]
         public double Threshold2
