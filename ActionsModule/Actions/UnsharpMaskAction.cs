@@ -18,7 +18,10 @@ namespace ActionsModule.Actions
             {
                 var gauss = m.GaussianBlur(new Size(this.GaussSize, this.GaussSize), this.GaussSigmaX);
 
-                Cv2.AddWeighted(m, this.Alpha, gauss, -1 * this.Beta, 0, m);
+                var alpha = 1 + this.Intensity;
+                var beta = -1 * (this.Intensity + this.Gamma);
+
+                Cv2.AddWeighted(m, alpha, gauss, beta, 0, m);
                 gauss.Dispose();
 
                 HasError = false;
@@ -58,36 +61,37 @@ namespace ActionsModule.Actions
             }
         }
         
-        double beta = 0.5;
+        double intensity = 1;
         [ImportExport]
-        [Slider(0.00, 10.0, 2, isIntegerType: false)]
-        public double Beta
+        [Slider(0.00, 30.0, 2, isIntegerType: false)]
+        public double Intensity
         {
             get
             {
-                return beta;
+                return intensity;
             }
 
             set
             {
-                SetProperty(ref beta, value);
+                SetProperty(ref intensity, value);
             }
         }
         
-        double alpha = 1.5;
+        double gamma = 0.0;
         [ImportExport]
-        [Slider(0.00, 10.0, 2, isIntegerType: false)]
-        public double Alpha
+        [Slider(0.00, 5.0, 2, isIntegerType: false)]
+        public double Gamma
         {
             get
             {
-                return alpha;
+                return gamma;
             }
 
             set
             {
-                SetProperty(ref alpha, value);
+                SetProperty(ref gamma, value);
             }
         }
+        
     }
 }

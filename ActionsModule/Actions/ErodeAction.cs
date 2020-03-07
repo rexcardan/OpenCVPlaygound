@@ -12,7 +12,7 @@ namespace ActionsModule.Actions
     public class ErodeAction : ImageAction
     {
         private MorphShapes ms = MorphShapes.Ellipse;
-        private int size = 3;
+        private double size = 3;
         private int iterations = 1;
         private BorderTypes borderTypes = BorderTypes.Constant;
 
@@ -46,8 +46,8 @@ namespace ActionsModule.Actions
         }
 
         [ImportExport]
-        [Slider(3, 29, 2)]
-        public int Size
+        [Slider(3, 29, 2, isIntegerType: false)]
+        public double Size
         {
             get
             {
