@@ -22,7 +22,6 @@ namespace ActionsModule.Actions
                  var m = input.CvtColor(ColorConversionCodes.GRAY2BGR);
 
                  var imageArea = m.Width * m.Height;
-                 var minImageArea = imageArea * (this.MinAreaOfImagePercent / 100.0);
 
                  var allContoursSelect = from contour in contours
                                          let boundingRect = Cv2.MinAreaRect(contour)
@@ -32,50 +31,57 @@ namespace ActionsModule.Actions
                                          let contourPercentage = hullArea / boundingRectArea
                                          let wtoh = boundingRect.Size.Width / boundingRect.Size.Height
                                          let htow = boundingRect.Size.Height / boundingRect.Size.Width
-                                         where hullArea >= minImageArea
-                                            && contourPercentage >= this.MinRectShapeArea
-                                            && (Math.Abs(wtoh - this.WidthToHeightRatio) <= this.WidthToHeightRatioDeviation
-                                             || Math.Abs(htow - this.WidthToHeightRatio) <= this.WidthToHeightRatioDeviation)
                                          select new
                                          {
                                              boundingRect.Center,
                                              Wtoh = wtoh,
+                                             Htow = htow,
                                              ImageArea = hullArea / imageArea,
                                              BoundingRect = boundingRect,
+                                             Pixels = boundingRect.Size.Width * boundingRect.Size.Height,
                                              ContourPerc = contourPercentage,
                                              ConvexHull = convexHull,
                                              HullArea = hullArea,
                                              RectArea = boundingRect.Size.Width * boundingRect.Size.Height
                                          };
 
-                 switch (this.SelectionMode)
+                 if (this.EnableFilters)
                  {
-                     case RectangleSelectionMode.MostNorth:
-                         allContoursSelect = allContoursSelect.OrderByDescending(c => c.Center.Y);
-                         break;
-                     case RectangleSelectionMode.MostSouth:
-                         allContoursSelect = allContoursSelect.OrderBy(c => c.Center.Y);
-                         break;
-                     case RectangleSelectionMode.MostEast:
-                         allContoursSelect = allContoursSelect.OrderByDescending(c => c.Center.Y);
-                         break;
-                     case RectangleSelectionMode.MostWest:
-                         allContoursSelect = allContoursSelect.OrderBy(c => c.Center.Y);
-                         break;
-                     case RectangleSelectionMode.BiggestBoundingRectArea:
-                         allContoursSelect = allContoursSelect.OrderBy(c => c.RectArea);
-                         break;
-                     case RectangleSelectionMode.SmallestBoundingRectArea:
-                         allContoursSelect = allContoursSelect.OrderByDescending(c => c.RectArea);
-                         break;
-                     case RectangleSelectionMode.BiggestConvexHullArea:
-                         allContoursSelect = allContoursSelect.OrderBy(c => c.HullArea);
-                         break;
-                     case RectangleSelectionMode.SmallestConvexHullArea:
-                         allContoursSelect = allContoursSelect.OrderByDescending(c => c.HullArea);
-                         break;
-                     default:
-                         throw new Exception($"Missing mode handling: {this.SelectionMode}");
+                     allContoursSelect = allContoursSelect
+                                            .Where(i => i.Pixels >= this.MinRectPixels && i.Pixels <= this.MaxRectPixels
+                                                        && i.ContourPerc >= this.MinRectShapeArea
+                                                        && (Math.Abs(i.Wtoh - this.WidthToHeightRatio) <= this.WidthToHeightRatioDeviation
+                                                            || Math.Abs(i.Htow - this.WidthToHeightRatio) <= this.WidthToHeightRatioDeviation));
+
+                     switch (this.SelectionMode)
+                     {
+                         case RectangleSelectionMode.MostNorth:
+                             allContoursSelect = allContoursSelect.OrderByDescending(c => c.Center.Y);
+                             break;
+                         case RectangleSelectionMode.MostSouth:
+                             allContoursSelect = allContoursSelect.OrderBy(c => c.Center.Y);
+                             break;
+                         case RectangleSelectionMode.MostEast:
+                             allContoursSelect = allContoursSelect.OrderByDescending(c => c.Center.Y);
+                             break;
+                         case RectangleSelectionMode.MostWest:
+                             allContoursSelect = allContoursSelect.OrderBy(c => c.Center.Y);
+                             break;
+                         case RectangleSelectionMode.BiggestBoundingRectArea:
+                             allContoursSelect = allContoursSelect.OrderBy(c => c.RectArea);
+                             break;
+                         case RectangleSelectionMode.SmallestBoundingRectArea:
+                             allContoursSelect = allContoursSelect.OrderByDescending(c => c.RectArea);
+                             break;
+                         case RectangleSelectionMode.BiggestConvexHullArea:
+                             allContoursSelect = allContoursSelect.OrderBy(c => c.HullArea);
+                             break;
+                         case RectangleSelectionMode.SmallestConvexHullArea:
+                             allContoursSelect = allContoursSelect.OrderByDescending(c => c.HullArea);
+                             break;
+                         default:
+                             throw new Exception($"Missing mode handling: {this.SelectionMode}");
+                     }
                  }
 
                  var allContours = allContoursSelect
@@ -89,8 +95,10 @@ namespace ActionsModule.Actions
 
                  var contourOfInterest = allContours.Last();
                  this.DetectedRect = $"ImageArea: {contourOfInterest.ImageArea}\n" +
+                                     $"Pixels: {contourOfInterest.Pixels:F0}\n" +
                                      $"RectShapeArea: {contourOfInterest.ContourPerc:P2}\n" +
-                                     $"WidthToHeight: {contourOfInterest.Wtoh}";
+                                     $"WidthToHeight: {contourOfInterest.Wtoh}\n" +
+                                     $"HeightToWidth: {contourOfInterest.Htow}";
 
                  if (!this.Crop)
                  {
@@ -129,11 +137,6 @@ namespace ActionsModule.Actions
         private string status;
 
         [ImportExport]
-        [Slider(0.01, 99.99, 0.01, isIntegerType: false)]
-        public double MinAreaOfImagePercent { get { return minAreaOfImagePercent; } set { SetProperty(ref minAreaOfImagePercent, value); } }
-        private double minAreaOfImagePercent = 5.0;
-
-        [ImportExport]
         [Slider(0.50, 1.00, 0.01, isIntegerType: false)]
         public double MinRectShapeArea { get { return minRectShapeArea; } set { SetProperty(ref minRectShapeArea, value); } }
         private double minRectShapeArea = 0.90;
@@ -152,6 +155,21 @@ namespace ActionsModule.Actions
         [Enum(typeof(RectangleSelectionMode))]
         public RectangleSelectionMode SelectionMode { get { return selectionMode; } set { SetProperty(ref selectionMode, value); } }
         private RectangleSelectionMode selectionMode = RectangleSelectionMode.BiggestBoundingRectArea;
+        
+        [ImportExport]
+        [CheckBox]
+        public bool EnableFilters { get { return enableFilters; } set { SetProperty(ref enableFilters, value); } }
+        private bool enableFilters = true;
+
+        [ImportExport]
+        [TextBox]
+        public long MinRectPixels { get { return minRectPixels; } set { SetProperty(ref minRectPixels, value); } }
+        private long minRectPixels = 1000;
+        
+        [ImportExport]
+        [TextBox]
+        public long MaxRectPixels { get { return maxRectPixels; } set { SetProperty(ref maxRectPixels, value); } }
+        private long maxRectPixels = 3000;
 
         [ImportExport]
         [CheckBox]

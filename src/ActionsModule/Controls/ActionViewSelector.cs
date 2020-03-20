@@ -98,6 +98,18 @@ namespace ActionsModule.Controls
                             sp.AppendChild(combo);
                             sp.AppendChild(new FrameworkElementFactory(typeof(Separator)));
                         }
+                        
+                        if (attr is TextBoxAttribute)
+                        {
+                            sp.AppendChild(GenerateLabel(prop));
+                            var en = attr as EnumAttribute;
+                            var txt = new FrameworkElementFactory(typeof(TextBox));
+
+                            txt.SetValue(TextBox.TextProperty, new Binding(prop.Name) { UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged });
+
+                            sp.AppendChild(txt);
+                            sp.AppendChild(new FrameworkElementFactory(typeof(Separator)));
+                        }
 
                         if (attr is RGBColorAttribute)
                         {
