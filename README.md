@@ -2,21 +2,21 @@
 
 ### Zoom / Scrolbars
 
-![Zoom](https://github.com/thomai-d/OpenCVPlaygound/tree/master/media/Zoom.gif)
+![Zoom](media/Zoom.gif)
 
 - Zoom with mouse wheel / slider
 - Drag with left mouse button
 
 ### Open multiple files
 
-![Multi-File](https://github.com/thomai-d/OpenCVPlaygound/tree/master/media/MultiFile.gif)
+![Multi-File](media/MultiFile.gif)
 
 - Open multiple files at once
 - Switch between the files in the bottom list
 
 ### Improved action stack
 
-![ActionStack](https://github.com/thomai-d/OpenCVPlaygound/tree/master/media/ActionStack.gif)
+![ActionStack](media/ActionStack.gif)
 
 - New actions are auto-detected
 - Temporary disable actions
