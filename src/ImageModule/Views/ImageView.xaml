@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="ImageModule.Views.ImageView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ImageModule.Views"
+             xmlns:vm="clr-namespace:ImageModule.ViewModels"
+             mc:Ignorable="d" 
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:controls="clr-namespace:ImageModule.Controls"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <DockPanel LastChildFill="True">
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+            <Slider Minimum="0.1" Maximum="2" Value="{Binding ZoomLevel, Mode=TwoWay}" Width="200" AutoToolTipPrecision="2" AutoToolTipPlacement="TopLeft" />
+            <Button Content="1:1" Command="{Binding SetUnityZoomCommand}" />
+        </StackPanel>
+
+        <ListBox ItemsSource="{Binding Images}" SelectedItem="{Binding SelectedImage}" DockPanel.Dock="Bottom">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="{x:Type vm:CachedImage}">
+                    <Image Width="{x:Static vm:CachedImage.PreviewSize}" Height="{x:Static vm:CachedImage.PreviewSize}"
+                           Stretch="Uniform" Source="{Binding Preview}" />
+                </DataTemplate> 
+            </ListBox.ItemTemplate> 
+        </ListBox>
+
+        <controls:ScrollViewerEx HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" ZoomCommand="{Binding ZoomCommand}">
+            <Image Source="{Binding Image}" Stretch="None" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Image.LayoutTransform>
+                    <ScaleTransform ScaleX="{Binding ZoomLevel}"
+                                ScaleY="{Binding ZoomLevel}" />
+                </Image.LayoutTransform>
+            </Image>
+        </controls:ScrollViewerEx>
+    </DockPanel>
+</UserControl>

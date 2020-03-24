@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="ActionsModule.Views.ActionsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ActionsModule"
+             xmlns:ap="clr-namespace:ActionsModule.AttachedProperties"
+             mc:Ignorable="d" 
+             xmlns:dt="clr-namespace:ActionsModule.Controls"
+             xmlns:design="clr-namespace:ActionsModule.Design"
+             d:DataContext="{d:DesignInstance Type=design:ActionsViewModel, IsDesignTimeCreatable=True}"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <UserControl.Resources>
+        <dt:ActionViewSelector x:Key="dtSelector"/>
+        <local:BindingProxy x:Key="vm" Data="{Binding}" />
+    </UserControl.Resources>
+    <Grid HorizontalAlignment="Stretch" Margin="0,0,10,0">
+        <DockPanel HorizontalAlignment="Stretch" Background="#FF7E7E7E">
+            <TextBlock Text="Action Stack" DockPanel.Dock="Top" TextAlignment="Center" Padding="5" Background="White"/>
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                <Button Content="Add" Width="100" Height="30" ap:ContextMenuButton.Enable="True">
+                    <Button.ContextMenu>
+                        <ContextMenu ItemsSource="{Binding Categories}">
+                            <ContextMenu.ItemContainerStyle>
+                                <Style TargetType="{x:Type MenuItem}">
+                                    <Setter Property="Command" Value="{Binding Data.AddCommand, Source={StaticResource vm}}" />
+                                    <Setter Property="CommandParameter" Value="{Binding}" />
+                                </Style>
+                            </ContextMenu.ItemContainerStyle>
+                            <ContextMenu.ItemTemplate>
+                                <HierarchicalDataTemplate ItemsSource="{Binding Actions}">
+                                    <Label Content="{Binding Name}" />
+                                </HierarchicalDataTemplate>
+                            </ContextMenu.ItemTemplate>
+                        </ContextMenu>
+                    </Button.ContextMenu>
+                    
+                </Button>
+                <Button Content="Load stack" Command="{Binding ImportCommand}" Width="100" Height="30" />
+                <Button Content="Save stack" Command="{Binding ExportCommand}" Width="100" Height="30" />
+            </StackPanel>
+
+            <ListView x:Name="current" HorizontalAlignment="Stretch" ItemsSource="{Binding CurrentActions}" MinHeight="300" DockPanel.Dock="Top" VerticalAlignment="Stretch"
+                      HorizontalContentAlignment="Stretch" ItemTemplateSelector="{StaticResource ResourceKey=dtSelector}"
+                      ScrollViewer.CanContentScroll="False">
+            </ListView>
+        </DockPanel>
+    </Grid>
+</UserControl>
