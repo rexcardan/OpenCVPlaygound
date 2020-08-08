@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
-using OpenCvSharp.Extensions;
+using OpenCvSharp.WpfExtensions;
 using MenuModule.Events;
 using Prism.Mvvm;
 using System.Windows.Input;
