@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 using OpenCvSharp;
-using OpenCvSharp.Extensions;
+using OpenCvSharp.WpfExtensions;
 
 namespace ImageModule.ViewModels
 {
